@@ -1,5 +1,4 @@
 // Desafio 1
-
 function compareTrue(primeiroTermo, segundoTermo){
   if (primeiroTermo == true && segundoTermo == true){
     return true;
@@ -20,7 +19,6 @@ console.log(calcArea(5, 2));
 console.log(calcArea(51, 1));
 
 // Desafio 3
-
 function splitSentence(string) {
   let array = string.split(" ");
   return array;
@@ -40,9 +38,14 @@ console.log(concatName(['foguete', 'não', 'tem', 'ré']));
 console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let a = wins;
+  let b = ties;
+  return ((a * 3)+(b * 1));
 }
+console.log(footballPoints(14, 8));
+console.log(footballPoints(1, 2));
+console.log(footballPoints(0, 0));
 
 // Desafio 6
 function highestCount() {
