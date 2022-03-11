@@ -7,7 +7,7 @@ function compareTrue(primeiroTermo, segundoTermo){
     return 'false';
   }
 }
-console.log(compareTrue(true, false));
+console.log(compareTrue(false, true));
 console.log(compareTrue(false, false));
 console.log(compareTrue(true, true));
 
