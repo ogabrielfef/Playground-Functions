@@ -49,10 +49,12 @@ console.log(footballPoints(0, 0));
 
 // Desafio 6
 function highestCount(arrayN) {
-  let ocorrencia = arrayN[0]
+  let ocorrencia = Math.max(...arrayN);
   let vezes = 0;
   for (let index = 0; index < arrayN.length; index+= 1){
-    if(ocorrencia === arrayN[index]) vezes++;
+    if(ocorrencia === arrayN[index]){
+    vezes += 1;
+    }
   }
   return vezes;
 }
