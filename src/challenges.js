@@ -67,7 +67,8 @@ function catAndMouse(mouse, cat1, cat2) {
 } 
   if (Math.abs((mouse - cat1)) > Math.abs((mouse - cat2))){
   return 'cat2';
-} if (Math.abs((mouse - cat1)) === Math.abs((mouse - cat2))){
+} 
+  if (Math.abs((mouse - cat1)) === Math.abs((mouse - cat2))){
   return "os catos se trombam e o rato foge"
 }
 }
@@ -78,16 +79,16 @@ console.log(catAndMouse(5,1,1));
 // Desafio 8
 function fizzBuzz(array) {
   let result = [];
-  for (let index = 0; index < array.length; index++){
-    let strin = "bug!"
+  let strin = "bug!"
+  for (let index = 0; index < array.length; index ++){
   if (array[index]% 3 === 0){
     strin = "fizz"
   }
   if (array[index]% 5 === 0){
-    strin = "buzz"
+    strin += "buzz"
   }
   if (array[index] % 3 === 0 && fizzBuzz[index]% 5 === 0){
-    strin = "fizzBuzz"
+    strin += "fizzBuzz"
   } result.push(strin);
 } return result;
 }
