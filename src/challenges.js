@@ -51,7 +51,7 @@ console.log(footballPoints(0, 0));
 function highestCount(arrayN) {
   let ocorrencia = arrayN[0]
   let vezes = 0;
-  for (let index = 0; index < arrayN.length; index++){
+  for (let index = 0; index < arrayN.length; index+= 1){
     if(ocorrencia === arrayN[index]) vezes++;
   }
   return vezes;
@@ -118,7 +118,7 @@ console.log(decode("h3 th2r2!"));
 
 // Desafio 10
 function techList() {
-  // seu código aqui
+  
 }
 
 module.exports = {
