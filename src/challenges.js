@@ -81,18 +81,30 @@ console.log(catAndMouse(5,1,1));
 // Desafio 8
 function fizzBuzz(array) {
   let result = [];
-  let strin = 'bug!'
   for (let index = 0; index < array.length; index ++){
-  if (array[index]% 3 === 0){
-    strin = 'fizz'
+    if(array[index] % 3 === 0){
+      if(array[index] % 5 === 0){
+        result[index] = 'fizzBuzz';
+      }
+      else{
+        result[index] = 'fizz';
+      }
+    }
+    else if(array[index] % 5 === 0){
+      if(array[index] % 3 === 0){
+        result[index] = 'fizzBuzz';
+      }
+      else{
+        result[index] = 'buzz';
+      }
+    }
+    else{
+      result[index] = 'bug!';
+    }
   }
-  if (array[index]% 5 === 0){
-    strin += 'buzz'
-  }
-  if (array[index] % 3 === 0 && fizzBuzz[index]% 5 === 0){
-    strin += 'fizzBuzz'
-  } result.push(strin);
-} return result;
+
+  return result;
+
 }
 console.log(fizzBuzz([2, 15, 7, 9, 45]));
 console.log(fizzBuzz([7, 9]));
