@@ -69,7 +69,7 @@ function catAndMouse(mouse, cat1, cat2) {
   return 'cat2';
 } 
   if (Math.abs((mouse - cat1)) === Math.abs((mouse - cat2))){
-  return "os catos se trombam e o rato foge"
+  return "os gatos trombam e o rato foge"
 }
 }
 console.log(catAndMouse(5,2,3));
