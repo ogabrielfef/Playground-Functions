@@ -133,7 +133,20 @@ console.log(decode("h3 th2r2!"));
 
 // Desafio 10
 function techList(tech, name) {
+  if (tech.length === 0) {
+    return 'Vazio!'
+  } else {
+    let arrayList = [];
+    tech.sort();
+    for (item in tech) {
+      let result = {
+        tech: tech[item],
+        name: nome
+      };
+    } arrayList.push(result);
+  }return arrayList;
 }
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"lucas"));
 
 module.exports = {
   calcArea,
@@ -148,21 +161,3 @@ module.exports = {
   splitSentence,
   techList,
 };
-
-function techList(tech, nome) {
-  if (tech.length === 0) {
-    return 'Vazio!'
-  }
-  else {
-    let arrayList = [];
-    tech.sort();
-    for (item in tech) {
-      let result = {
-        tech: tech[item],
-        name: nome
-      };
-      arrayList.push(result);
-    }
-    return arrayList;
-  }
-} console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"lucas"));
