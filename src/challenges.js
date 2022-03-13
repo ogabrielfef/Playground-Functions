@@ -132,21 +132,24 @@ function decode(encodeString) {
 console.log(decode("h3 th2r2!"));
 
 // Desafio 10
-function techList(tech, name) {
+function techList(tech, nome) {
   if (tech.length === 0) {
     return 'Vazio!'
-  } else {
-    let arrayList = [];
+  }
+  else {
+    let listArr = [];
     tech.sort();
-    for (item in tech) {
-      let result = {
-        tech: tech[item],
+    for (i in tech) {
+      let results = {
+        tech: tech[i],
         name: nome
       };
-    } arrayList.push(result);
-  }return arrayList;
+      listArr.push(results);
+    }
+    return listArr;
+  }
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"lucas"));
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"));
 
 module.exports = {
   calcArea,
