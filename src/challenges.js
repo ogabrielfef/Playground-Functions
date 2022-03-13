@@ -132,8 +132,7 @@ function decode(encodeString) {
 console.log(decode("h3 th2r2!"));
 
 // Desafio 10
-function techList() {
-  
+function techList(tech, name) {
 }
 
 module.exports = {
@@ -149,3 +148,21 @@ module.exports = {
   splitSentence,
   techList,
 };
+
+function techList(tech, nome) {
+  if (tech.length === 0) {
+    return 'Vazio!'
+  }
+  else {
+    let arrayList = [];
+    tech.sort();
+    for (item in tech) {
+      let result = {
+        tech: tech[item],
+        name: nome
+      };
+      arrayList.push(result);
+    }
+    return arrayList;
+  }
+} console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"lucas"));
